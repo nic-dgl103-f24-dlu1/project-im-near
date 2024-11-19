@@ -143,6 +143,28 @@
     flex-direction: column;
     gap: 1rem;
   }
+
+  /*-------- HERO SECTION ---------*/
+.hero {
+    background: url('images/atlas_hero.jpeg') no-repeat center center/cover; /* I think I'm going to change this image at a later point because the hero isn't very visable against this but I'm trying to get this submitted on time.*/
+    text-align: center;
+    color: #fff;
+    padding: 6rem 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 4.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero .btn {
+    font-size: 1.6rem;
+  }
    
   /*-------- MEDIA QUERIES ---------*/
   @media (min-width: 768px) {
