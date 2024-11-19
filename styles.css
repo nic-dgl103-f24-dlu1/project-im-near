@@ -128,7 +128,7 @@ nav {
 }
 
 .hamburger {
-    display: flex;
+    display: none; 
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
@@ -161,6 +161,7 @@ nav {
     }
   
     .hamburger {
+      display: flex; 
       margin: 0 auto;
     }
   }
@@ -191,24 +192,22 @@ nav {
 
   @media (max-width: 768px) {
     .hero {
-      padding: 3rem 1rem;
-      background-position: center;
-      background-size: cover;
+        padding: 3rem 1rem;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
     }
-  
+
     .hero h1 {
-      font-size: 3rem;
+        font-size: 2.8rem; /* Smaller text size */
     }
-  
+
     .hero p {
-      font-size: 1.4rem;
+        font-size: 1.4rem;
+        max-width: 90%;
+        margin: 0 auto;
     }
-  
-    .hero .btn {
-      font-size: 1.4rem;
-      padding: 0.8rem 1.5rem;
-    }
-  }
+}
 
 /*-------- ABOUT SECTION ---------*/
 
