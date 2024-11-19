@@ -1,4 +1,5 @@
 /*-------- GLOBAL STYLES ---------*/
+
 * {
     box-sizing: border-box;
   }
@@ -16,8 +17,9 @@
     line-height: 1.5;
   }
   
-  /*-------- TYPOGRAPHY ---------*/
- h1, h2, h3 {
+/*-------- TYPOGRAPHY ---------*/
+ 
+  h1, h2, h3 {
     margin: 0;
   }
   
@@ -74,7 +76,8 @@
     background-color: #333b45;
   }
   
-  /*-------- HEADER ---------*/
+/*-------- HEADER ---------*/
+
   header {
     background-color: #f2f5f7;
     border-bottom: 1px solid #ddd;
@@ -144,7 +147,8 @@
     gap: 1rem;
   }
 
-  /*-------- HERO SECTION ---------*/
+/*-------- HERO SECTION ---------*/
+
 .hero {
     background: url('images/atlas_hero.jpeg') no-repeat center center/cover; /* I think I'm going to change this image at a later point because the hero isn't very visable against this but I'm trying to get this submitted on time.*/
     text-align: center;
@@ -166,7 +170,20 @@
     font-size: 1.6rem;
   }
 
-  /*-------- FEATURED ITEMS ---------*/
+/*-------- ABOUT SECTION ---------*/
+
+  .about {
+    background-color: #f9f9f9;
+    padding: 4rem 2rem;
+  }
+  
+  .about p {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+/*-------- FEATURED ITEMS ---------*/
  
   .featured {
     padding: 4rem 2rem;
