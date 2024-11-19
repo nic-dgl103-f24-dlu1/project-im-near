@@ -75,6 +75,24 @@
   a.btn:hover {
     background-color: #333b45;
   }
+
+  @media (max-width: 768px) {
+    body {
+      font-size: 1.2rem;
+    }
+    h1 {
+      font-size: 2.8rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.6rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+  }
   
 /*-------- HEADER ---------*/
 
@@ -129,17 +147,24 @@ nav {
     display: flex; 
 }
 
-@media (min-width: 768px) {
-    .menu {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
+@media (max-width: 768px) {
+    header {
+      padding: 0.5rem 0;
     }
-
+  
+    header .logo {
+      max-width: 120px;
+    }
+  
+    nav {
+      margin-top: 0.5rem;
+    }
+  
     .hamburger {
-        display: none;
+      margin: 0 auto;
     }
-}
+  }
+  
 
 /*-------- HERO SECTION ---------*/
 
@@ -162,6 +187,27 @@ nav {
   
   .hero .btn {
     font-size: 1.6rem;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: 3rem 1rem;
+      background-position: center;
+      background-size: cover;
+    }
+  
+    .hero h1 {
+      font-size: 3rem;
+    }
+  
+    .hero p {
+      font-size: 1.4rem;
+    }
+  
+    .hero .btn {
+      font-size: 1.4rem;
+      padding: 0.8rem 1.5rem;
+    }
   }
 
 /*-------- ABOUT SECTION ---------*/
@@ -213,38 +259,34 @@ nav {
 
 @media (max-width: 768px) {
     .featured .item img {
-        display: none; 
+      display: none; 
     }
-
+  
     .featured .item {
-        padding: 2rem; 
+      padding: 1rem;
     }
-
+  
     .featured .item h3 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
+      font-size: 1.8rem;
     }
-
+  
     .featured .item p {
-        margin: 0;
-        font-size: 1.4rem;
-        line-height: 1.6;
+      font-size: 1.2rem;
     }
-}
+  }
+  
 
 /*These aren't functioning how I'd like them to but for the moment I'm focused on getting the page mobile friendly first.*/
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .featured .item-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-        gap: 2rem;
-        padding: 0 2rem; 
-        max-width: 100%; 
+      grid-template-columns: 1fr;
+      gap: 1rem;
     }
+  }
 
     .featured .item {
         padding: 1.5rem;
     }
-}
 
 @media (min-width: 1200px) {
     .featured .item-grid {
@@ -277,6 +319,12 @@ nav {
     height: 100%;
     border: 0;
   }
+
+  @media (max-width: 768px) {
+    .video-wrapper {
+      display: none; 
+    }
+  }
   
 /*-------- FOOTER SECTION ---------*/
 
@@ -307,4 +355,16 @@ footer {
     font-size: 1.2rem;
     margin-top: 1rem;
     color: #6b7783;
+  }
+
+  @media (max-width: 768px) {
+    footer {
+      padding: 1rem 1rem;
+      font-size: 1.2rem;
+    }
+  
+    footer address,
+    footer .disclaimer {
+      font-size: 1rem;
+    }
   }
