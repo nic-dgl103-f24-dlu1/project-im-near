@@ -97,74 +97,93 @@
 /*-------- HEADER ---------*/
 
 header {
-    background-color: #f2f5f7;
-    border-bottom: 1px solid #ddd;
-    padding: 1rem 0;
+  background-color: #f2f5f7;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 header .logo {
-    max-width: 150px;
-    display: block;
-    margin: 0 auto;
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu {
-    display: none;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  background-color: #f2f5f7;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 .hamburger {
-    display: none; 
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    width: 24px;
-    height: 18px;
-    margin: 0 auto;
+  display: none; 
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 24px;
+  height: 18px;
+  margin: 0 auto;
 }
 
 .hamburger span {
-    display: block;
-    height: 2px;
-    background-color: #333;
+  display: block;
+  height: 2px;
+  background-color: #333;
 }
 
 .menu.active {
-    display: flex; 
+  display: flex; 
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 @media (max-width: 768px) {
-    header {
-      padding: 0.5rem 0;
-    }
-  
-    header .logo {
-      max-width: 120px;
-    }
-  
-    nav {
-      margin-top: 0.5rem;
-    }
-  
-    .hamburger {
-      display: flex; 
-      margin: 0 auto;
-    }
+  header {
+    padding: 0.5rem 0;
   }
+
+  header .logo {
+    max-width: 120px;
+  }
+
+  nav {
+    margin-top: 0.5rem;
+  }
+
+  .hamburger {
+    display: flex; 
+    margin: 0 auto;
+  }
+}
   
 
 /*-------- HERO SECTION ---------*/
