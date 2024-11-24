@@ -166,25 +166,41 @@ nav {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-@media (max-width: 768px) {
-  header {
-    padding: 0.5rem 0;
-  }
-
-  header .logo {
-    max-width: 120px;
-  }
-
-  nav {
-    margin-top: 0.5rem;
-  }
-
-  .hamburger {
-    display: flex; 
-    margin: 0 auto;
+@media (min-width: 769px) {
+  .menu {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      align-items: center;
+      position: static;
+      background-color: transparent;
+      padding: 0;
+      border: none;
   }
 }
-  
+
+@media (max-width: 768px) {
+  .hamburger {
+      display: flex;
+  }
+
+  .menu {
+      display: none;
+  }
+
+  .menu.active {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      position: absolute;
+      top: 100%;
+      background-color: #f2f5f7;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+  }
+}
 
 /*-------- HERO SECTION ---------*/
 
