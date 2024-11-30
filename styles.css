@@ -563,3 +563,80 @@ footer {
 .btn:hover {
   background-color: #2d943a;
 }
+
+/*-------- RESERVATION INFO ---------*/
+
+.reservation-info {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.reservation-info h2 {
+  font-size: 3.2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.reservation-info h3 {
+  font-size: 2.4rem;
+  color: #424b5a;
+  margin-bottom: 1rem;
+}
+
+.reservation-info p {
+  font-size: 1.6rem;
+  color: #505d68;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/*-------- VISIT US SECTION ---------*/
+
+.visit-us {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.visit-us h3 {
+  font-size: 2.4rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.visit-us address {
+  font-size: 1.6rem;
+  color: #505d68;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.visit-us h4 {
+  font-size: 2rem;
+  color: #424b5a;
+  margin-bottom: 1rem;
+}
+
+.visit-us ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  font-size: 1.6rem;
+  color: #505d68;
+  line-height: 1.8;
+}
+
+.visit-us ul li {
+  margin-bottom: 0.5rem;
+}
+
+.visit-us a {
+  color: #39b54a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.visit-us a:hover {
+  text-decoration: underline;
+}
