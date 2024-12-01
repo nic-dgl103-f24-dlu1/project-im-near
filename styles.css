@@ -205,28 +205,51 @@ nav {
 /*-------- HERO SECTION ---------*/
 
 .hero {
+  position: relative;
   background: url('images/new_atlas_hero.jpg') no-repeat center center/cover;
   text-align: center;
   color: #fff; 
   padding: 6rem 2rem;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.hero h1, .hero p, .hero .btn {
+  position: relative;
+  z-index: 2;
+}
+
 .hero h1 {
   font-size: 4.2rem;
   margin-bottom: 2rem;
-  color: #09005e; /* experiment with this colour */
+  color: #ffffff; /* as it would turn out, a pure white is the best answer. */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
 
 .hero p {
   font-size: 1.8rem;
   margin-bottom: 2rem;
-  color: #09005e; 
+  color: #f0f0f0; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); 
 }
 
 .hero .btn {
   font-size: 1.6rem;
   background-color: #424b5a; 
   color: #fff; 
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); 
 }
 
 /*-------- ABOUT SECTION ---------*/
