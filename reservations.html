@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Café Reservations Page | Downtown Courtenay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/atlas-logo.png" alt="Atlas Café Logo" class="logo">
+            <nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="menu">
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="reservation-info">
+            <div class="container">
+                <h2>Reservations</h2>
+                <h3>A Note About Reservations</h3>
+                <p>
+                    We do not take reservations in the traditional sense. We accommodate one group reservation of up to 6 persons and leave the rest of the restaurant available for walk-in customers.
+                </p>
+                <p>
+                    We do take reservations on <strong>VALENTINES DAY & NEW YEARS EVE</strong>.
+                </p>
+                <p>
+                    <strong>Team Atlas looks forward to serving you soon.</strong><br>
+                    In deep appreciation for you supporting us and our local community.
+                </p>
+            </div>
+        </section>
+    
+        <section class="visit-us">
+            <div class="container">
+                <h3>Visit Us</h3>
+                <address>
+                    250 6th Street<br>
+                    Courtenay, BC
+                </address>
+                <h4>Hours</h4>
+                <ul>
+                    <li>Tuesday: 11:25 AM - 8:30 PM</li>
+                    <li>Wednesday: 11:25 AM - 8:30 PM</li>
+                    <li>Thursday: 11:25 AM - 8:30 PM</li>
+                    <li>Friday: 11:25 AM - 9:00 PM</li>
+                    <li>Saturday: 11:25 AM - 9:00 PM</li>
+                    <li>Sunday: 8:30 AM - 2:30 PM BRUNCH ONLY</li>
+                </ul>
+                <p>
+                    <a href="tel:+12503389838">(250) 338-9838</a><br>
+                    <a href="mailto:eat@atlascafe.ca">eat@atlascafe.ca</a>
+                </p>
+                <p>
+                    Download a printable version of our <a href="#breakfast-menu">breakfast menu</a> or <a href="#lunch-dinner-menu">lunch and dinner menu</a>.
+                </p>
+            </div>
+        </section>
+    </main>    
+    
+    <footer>
+        <div class="container">
+            <p>© 2024 Atlas Café. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#atlasfacebook">Facebook</a> |
+                <a href="#atlasinstagram">Instagram</a>
+            </div>
+            <address>
+                250 6th Street, Courtenay, BC V9N 1M1<br>
+                Phone: <a href="#phonenumber">(250) 338-9838</a><br>
+                Email: <a href="#email">eat@atlascafe.ca</a>
+            </address>
+            <p class="disclaimer">This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const menu = document.querySelector(".menu");
+        const menuItems = document.querySelectorAll(".menu li a");
+    
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle("active");
+            hamburger.classList.toggle("active");
+        });
+    
+        menuItems.forEach(item => {
+            item.addEventListener("click", () => {
+                menu.classList.remove("active");
+                hamburger.classList.remove("active");
+            });
+        });
+    </script>
+</body>
+</html>

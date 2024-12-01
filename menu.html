@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Café Menu & Gallery | Downtown Courtenay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/atlas-logo.png" alt="Atlas Café Logo" class="logo">
+            <nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="menu">
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!--This menu section content wise is ripped directly from the atlas website. I added $ notations to make it look better.-->
+        <section class="breakfast-menu">
+            <div class="container">
+                <h2>Breakfast Menu</h2>
+                <p>(available 8:30am - 11:45am Saturday & 8:30am - 2:30pm Sunday)</p>
+        
+                <div class="tabs">
+                    <button class="tab-btn active" data-target="benedicts">Benedicts</button>
+                    <button class="tab-btn" data-target="eggs-cetera">Eggs Cetera</button>
+                    <button class="tab-btn" data-target="lighter-side">Lighter Side</button>
+                    <button class="tab-btn" data-target="sides">Sides</button>
+                </div>
+        
+                <div class="tab-content">
+                    <div id="benedicts" class="tab-panel active">
+                        <h3>Benedicts</h3>
+                        <p>served with atlas roasted potatoes and fresh fruit</p>
+                        <div class="menu-items">
+                            <h4>Tannadice</h4>
+                            <p>Poached eggs, toasted English muffin, Tannadice Farms ham, house hollandaise</p>
+                            <p>$20.50</p>
+        
+                            <h4>Atlas</h4>
+                            <p>Poached eggs, toasted English muffin, smoked salmon, capers, house hollandaise</p>
+                            <p>$21</p>
+        
+                            <h4>Pesto Mushroom</h4>
+                            <p>Poached eggs, toasted English muffin, sautéed mushrooms and arugula in pesto, house hollandaise</p>
+                            <p>$20</p>
+        
+                            <h4>Bacon</h4>
+                            <p>Poached eggs, toasted English muffin, bacon, tomato, house hollandaise</p>
+                            <p>$21</p>
+                        </div>
+                        <a href="#" class="btn">Order Online</a>
+                    </div>
+        
+                    <div id="eggs-cetera" class="tab-panel">
+                        <h3>Eggs Cetera</h3>
+                        <p>served with atlas roasted potatoes and fresh fruit</p>
+                        <div class="menu-items">
+                            <h4>Classic Breakfast</h4>
+                            <p>Two eggs, poached or scrambled, chipotle sausage or bacon, caramelized onions, focaccia toast</p>
+                            <p>$19.50</p>
+        
+                            <h4>Avocado Toast</h4>
+                            <p>Smushed avocado on house-made focaccia toast with poached eggs, fresh arugula, feta cheese, pickled red onion</p>
+                            <p>$20.50</p>
+        
+                            <h4>Capicolla Eggwich</h4>
+                            <p>Toasted focaccia, spicy capicolla ham, red peppers, sautéed mushrooms, scrambled eggs, mozzarella cheese</p>
+                            <p>$20</p>
+        
+                            <h4>Huevos Rancheros</h4>
+                            <p>Poached eggs on local corn tortilla with roasted sweet chili yams, black beans, house-smoked asiago cheese, salsa, sour cream, guacamole and pickled red onions</p>
+                            <p>$20.50</p>
+        
+                            <h4>Pulled Pork Breakfast Bowl</h4>
+                            <p>House-smoked BBQ pulled pork, roasted corn, sautéed mushrooms, fresh cilantro, two poached eggs, ancho-annatto hollandaise on your choice of firecracker rice* or breakfast potatoes</p>
+                            <p>$21</p>
+
+                            <h4>Atlas Breakfast Bowl</h4>
+                            <p>roasted kabocha squash, caramelized onion, sautéed spinach, two poached eggs, ancho annatto hollandaise goats cheese on your choice of firecraker rice* or breakfast potatoes</p>
+                            <p>$21</p>
+
+                            <h4>South West Vegan Bowl</h4>
+                            <p>avocado, chili yams, roasted corn, black beans, salsa, sautéed organic tofu on your choice of firecraker rice* or breakfast potatoes</p>
+                            <p>$19.50</p>
+                        </div>
+                        <a href="#" class="btn">Order Online</a>
+                    </div>
+        
+                    <div id="lighter-side" class="tab-panel">
+                        <h3>Lighter Side</h3>
+                        <div class="menu-items">
+                            <h4>Eggs & Toast</h4>
+                            <p>Two eggs, poached or scrambled, with focaccia toast and choice of potatoes or fruit</p>
+                            <p>$13</p>
+        
+                            <h4>House Made Granola</h4>
+                            <p>With fresh fruit & tree island yogurt</p>
+                            <p>$11</p>
+        
+                            <h4>Fresh Fruit & Yogurt</h4>
+                            <p>$9</p>
+                        </div>
+                        <a href="#" class="btn">Order Online</a>
+                    </div>
+        
+                    <div id="sides" class="tab-panel">
+                        <h3>Sides</h3>
+                        <div class="menu-items">
+                            <h4>Butcher’s Block Chipotle Sausage</h4>
+                            <p>$7.50</p>
+        
+                            <h4>Bacon</h4>
+                            <p>$7.50</p>
+        
+                            <h4>Side</h4>
+                            <p>Roasted Potatoes</p>
+                            <p>$5</p>
+        
+                            <h4>Avocado</h4>
+                            <p>$3</p>
+        
+                            <h4>Fresh Fruit</h4>
+                            <p>$5</p>
+                        </div>
+                        <a href="#" class="btn">Order Online</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-gallery">
+            <div class="container">
+                <h2>Gallery</h2>
+                <p>Explore our dishes, from local Comox recipes, to world wide delicacies.</p> <!--this is made from scratch because I feel there's not too much with the base site to work with that'd fit my plan.-->
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="images/food_gallery1.jpg" alt="Dish 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/food_gallery2.jpg" alt="Dish 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/food_gallery3.jpg" alt=" Dish 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/food_gallery4.jpg" alt="Dish 4">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/food_gallery5.jpg" alt=" Dish 5">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/food_gallery6.jpg" alt="Dish 6">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/food_gallery7.jpg" alt="Dish 7">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/food_gallery8.jpg" alt="Dish 8">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>    
+    <footer>
+        <div class="container">
+            <p>© 2024 Atlas Café. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#atlasfacebook">Facebook</a> |
+                <a href="#atlasinstagram">Instagram</a>
+            </div>
+            <address>
+                250 6th Street, Courtenay, BC V9N 1M1<br>
+                Phone: <a href="#phonenumber">(250) 338-9838</a><br>
+                Email: <a href="#email">eat@atlascafe.ca</a>
+            </address>
+            <p class="disclaimer">This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const menu = document.querySelector(".menu");
+        const menuItems = document.querySelectorAll(".menu li a");
+    
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle("active");
+            hamburger.classList.toggle("active");
+        });
+    
+        menuItems.forEach(item => {
+            item.addEventListener("click", () => {
+                menu.classList.remove("active");
+                hamburger.classList.remove("active");
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+    const tabButtons = document.querySelectorAll(".tab-btn");
+    const tabPanels = document.querySelectorAll(".tab-panel");
+
+    tabButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            tabButtons.forEach(btn => btn.classList.remove("active"));
+            tabPanels.forEach(panel => panel.classList.remove("active"));
+
+            button.classList.add("active");
+            const target = button.getAttribute("data-target");
+            document.getElementById(target).classList.add("active");
+        });
+    });
+});
+    </script>
+</body>
+</html>

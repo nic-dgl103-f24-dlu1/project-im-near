@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Café | Downtown Courtenay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/atlas-logo.png" alt="Atlas Café Logo" class="logo">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h1>Atlas Café</h1>
+                <p>Serving the good people of the Comox Valley since 1995.</p>
+                <a href="#menu" class="btn">View Menu</a>
+            </div>
+        </section>
+        
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Atlas Café, in the Comox Valley, is the home of perfectly overstuffed breakfasts, bustling lunches and inspired dinners.</p>
+                <p>It's where friends and family share laughs, colleagues share ideas, and  the entire community gathers to share our passion for great food. For a restaurant with consistent quality food, service and fun in Downtown Courtenay, Atlas is the place to go.</p>
+            </div>
+        </section>
+        
+        <section id="featured" class="featured"> <!--This section is all original, I just thought maybe it'd fit good on the homepage to display some of the food offered. I'm not very good at creative writing.-->
+            <div class="container">
+                <h2>Featured Items</h2>
+                <div class="item-grid">
+                    <div class="item">
+                        <img src="images/brunch.jpg" alt="Weekend Brunch">
+                        <h3>Weekend Brunch</h3>
+                        <p>Our signature brunch is a must-try, served every Saturday and Sunday morning.</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/dinner.jpg" alt="Daily Specials">
+                        <h3>Daily Specials</h3>
+                        <p>Enjoy our rotating selection of seasonal dishes, crafted with love.</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/dessert.jpg" alt="Atlas Desserts">
+                        <h3>Homemade Desserts</h3>
+                        <p>End your meal on a sweet note with our handcrafted desserts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="video" class="video">
+            <div class="container">
+                <h2>Our gourmet food</h2> <!--This is a video that I feel works, I'm not sure if a youtube embed was alright or not.-->
+                <div class="video-wrapper"> <!--I also forgot to say that this isn't something that exists on the actual website so it's something I had to write myself.-->
+                    <iframe 
+                        width="560" 
+                        height="315"
+                        src="https://www.youtube.com/watch?v=DsWKMNkvelI" 
+                        title="Food B Roll" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+        <footer>
+            <div class="container"> <!--I'm getting to this pretty late because I've been sick with covid all week so my work might be a bit rushed, I'm doing my best however.-->
+                <p>© 2024 Atlas Café. All rights reserved.</p>
+                <div class="social-media">
+                    <a href="#atlasfacebook">Facebook</a> |
+                    <a href="#atlasinstagram">Instagram</a>
+                </div>
+                <address>
+                    250 6th Street, Courtenay, BC V9N 1M1<br>
+                    Phone: <a href="#phonenumber">(250) 338-9838</a><br>
+                    Email: <a href="#email">eat@atlascafe.ca</a>
+                </address>
+                <p class="disclaimer">This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.</p>
+            </div>
+        </footer>
+
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const menu = document.querySelector(".menu");
+        
+            hamburger.addEventListener("click", () => {
+                menu.classList.toggle("active");
+            });
+        </script>
+
+</body>
+</html>
