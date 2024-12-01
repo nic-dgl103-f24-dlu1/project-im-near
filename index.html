@@ -14,19 +14,20 @@
         <div class="container">
             <img src="images/atlas-logo.png" alt="Atlas Café Logo" class="logo">
             <nav>
-                <ul class="menu">
-                    <li><a href="index.html">Homepage</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="reservations.html">Reservations</a></li>
-                </ul>
                 <div class="hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
+                <ul class="menu">
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                </ul>
             </nav>
         </div>
     </header>
+    
     <main>
         
         <section id="home" class="hero">
@@ -104,12 +105,21 @@
         </footer>
 
         <script>
-            const hamburger = document.querySelector(".hamburger");
-            const menu = document.querySelector(".menu");
-        
-            hamburger.addEventListener("click", () => {
-                menu.classList.toggle("active");
+        const hamburger = document.querySelector(".hamburger");
+        const menu = document.querySelector(".menu");
+        const menuItems = document.querySelectorAll(".menu li a");
+    
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle("active");
+            hamburger.classList.toggle("active");
+        });
+    
+        menuItems.forEach(item => {
+            item.addEventListener("click", () => {
+                menu.classList.remove("active");
+                hamburger.classList.remove("active");
             });
+        });
         </script>
 
 </body>
