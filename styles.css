@@ -35,6 +35,7 @@ h1 {
   text-align: center;
   margin-bottom: 1rem;
   color: #333;
+  font-family: "Roboto", sans-serif;
   /* Darker color for headings to increase contrast */
 }
 
